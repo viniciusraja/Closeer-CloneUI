@@ -8,6 +8,6 @@ export default {
     width,
     height,
   },
-  headerHeight:0.2*height,
+  headerHeight:0.1*height,
   isSmallDevice: width < 375,
 };

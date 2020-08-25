@@ -3,18 +3,49 @@
 import React from 'react';
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
+import { createSwitchNavigator } from 'react-navigation';
 import LoginScreen from 'screens/LoginScreen';
+import AlreadyHaveAccount from 'screens/LoginScreen/AlreadyHaveAccount'
 import Header from 'components/Header'
-const AppNavigator = createStackNavigator(
+import HomeScreen from 'screens/HomeScreen'
+import InitialLoadingScreen from 'screens/InitialLoadingScreen'
+const LoginStack = createStackNavigator(
   {
   LoginScreen: {
     screen: LoginScreen,
     navigationOptions: {
+      headerShown:false
+      
+    },
+  },
+  AlreadyHaveAccount: {
+    screen: AlreadyHaveAccount,
+    
+    navigationOptions: {
       header:(()=><Header/>),
     },
-            
   },
 });
-  const Router = createAppContainer(AppNavigator);
+const LogedStack = createStackNavigator(
+  {
+  HomeScreen: {
+    screen: HomeScreen,
+    navigationOptions: {
+      header:(()=><Header/>),
+      
+    },
+  },
+
+});
+  const Router = createSwitchNavigator(
+    {
+      AuthLoading: InitialLoadingScreen,
+      Login: LoginStack,
+      Home: LogedStack,
+    },
+    {
+      initialRouteName: 'AuthLoading',
+    }
+  );
   
-export default Router;
+export default createAppContainer(Router);

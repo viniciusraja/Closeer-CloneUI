@@ -3,7 +3,7 @@ import Layout from './Layout'
 export default {
     primaryFontFamily:'Solomon-Sans-SemiBold',
     secondaryFontFamily:'Solomon-Sans-Normal',
-    bigFontSize:RFValue(24, Layout.window.height),
+    largeFontSize:RFValue(44, Layout.window.height),
     mediumFontSize:RFValue(18, Layout.window.height),
-    smallFontSize:RFValue(11, Layout.window.height)
+    smallFontSize:RFValue(13, Layout.window.height)
 };
