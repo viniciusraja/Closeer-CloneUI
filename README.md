@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=150 height=150 src="./src/assets/images/icon.png" alt="Project logo"></a>
+ <img width=200  src="./src/assets/images/logo-closeer-black@2x.png" alt="Project logo"></a>
 </p>
 
 <h3 align="center"></h3>
@@ -8,24 +8,22 @@
 <div align="center">
 
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![GitHub Issues](https://img.shields.io/github/issues/viniciusraja/MegahackAmbev.svg)](https://github.com/viniciusraja/MegahackAmbev/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/viniciusraja/MegahackAmbev.svg)](https://github.com/viniciusraja/MegahackAmbev/pulls)
+[![GitHub Issues](https://img.shields.io/github/issues/viniciusraja/MegahackAmbev.svg)](https://github.com/viniciusraja/Closeer-CloneUI/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/viniciusraja/MegahackAmbev.svg)](https://github.com/viniciusraja/Closeer-CloneUI/pulls)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
 </div>
 
 ---
 
-<p align="center"> Protótipo de App realizado em menos de uma semana no desafio da Hackaton MegaHack 3.0
-    <br> 
-    App prototype made in a week for a Hackaton.
+<p align="center"> Redesign do App da Closeer, com funcionalidades básicas.
 </p>
 
-<div align="center" style="margin-bottom:50px" >
+<!-- <div align="center" style="margin-bottom:50px" >
   <a href="" rel="noopener">
  <img width=250px style="margin-right:150px" src="./readme/AppUsability-1.gif" alt="Tela Inicial do App 1"></a>
  <img width=250px src="./readme/AppUsability-2.gif" alt="Tela Inicial do App 2"></a>
-</div>
+</div> -->
 
 ## 📝 Table of Contents
 
@@ -37,15 +35,17 @@
 ## 🧐 About <a name = "about"></a>
 
 <p align="justify">
-Aplicativo Ambev Experience possuí uma visão ambiental focado num programa de fidelização dos clientes por meio de recebimento de pontos ao reciclar latinhas, fora implementado leitura de QrCode, para verificar a quantidades de pontos por latas recicladas. Também foi desenvolvido um mapa, que exibia com ícones costumizados as localizações dos pontos de reciclagem ao redor do Brasil, os pontos eram recebidos através de uma chamada a API utilizando Redux para gerenciamento de estados e o redux-thunk como criador de ações, para lidar com ações assíncronas.
-</p>
+Inicialmente foi realizado o redesign de algumas telas do App da Closeer, no figma. Em seguido o projeto foi implementado em React Native, utilizando Redux-thunk, asyncStorage, qrCodeScanner, entre outras tecnologias.
+<a align="justify">
+https://www.figma.com/file/U3M1MGIUig5lLNQNgqU1MZ/Closeer-UI?node-id=0%3A1
+</a>
 
-## 🏁 Getting Started <a name = "getting_started"></a>
+<!-- ## 🏁 Getting Started <a name = "getting_started"></a>
 
 
 ### Executando o APP
 
-Você poderá executar o Ambev Experience por meio do App do Expo, basta escanear o QrCode abaixo com o App Expo, que pode ser encontrado na PlayStore.
+Você poderá executar o Closeer Clone por meio do App do Expo, basta escanear o QrCode abaixo com o App Expo, que pode ser encontrado na PlayStore.
 
 Você também poderá executar o app por meio do navegador com o link abaixo:
 https://expo.io/appetize-simulator?url=https://expo.io/@viniciusraja/megahack-ambev-experience
@@ -88,7 +88,7 @@ Abra o Scan no seu AmbevExperience após logar na sua conta e escaneie os QrCode
   <a href="" rel="noopener" margin-right=10>
  <img width=300px src="https://raw.githubusercontent.com/viniciusraja/MegahackAmbev/master/readme/qrCodeAnuncios.PNG" alt="Qrcode para uso do usuário">
  </a>
-
+ -->
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
