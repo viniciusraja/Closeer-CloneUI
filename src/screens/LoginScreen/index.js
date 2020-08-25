@@ -4,7 +4,6 @@ import Constants from 'config/constants'
 import {styles} from './styles'
 import { useNavigation } from 'react-navigation-hooks';
 
-// const loginBackground=require('assets/images/LoginBackground.png')
 export default function LoginScreen() {
     const { navigate } = useNavigation();
     return (
