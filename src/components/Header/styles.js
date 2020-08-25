@@ -6,7 +6,7 @@ export const styles = StyleSheet.create({
     height: Constants.Layout.headerHeight,
     paddingHorizontal: 0.04 * Constants.Layout.window.width,
     flexDirection: 'row',
-    backgroundColor: Constants.Colors.closeerBackgroundColor,
+    backgroundColor: Constants.Colors.closeerLight,
     alignItems: 'center',
     justifyContent: 'space-between',
   },

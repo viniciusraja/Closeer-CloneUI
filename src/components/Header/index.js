@@ -12,7 +12,6 @@ export default function Header(props) {
   const {navigate} = useNavigation();
   const { routeName } = useNavigationState();
   const userInfo = useSelector((state) => state.getUserInfo.userInfo);
-  console.log(userInfo,'Header')
   return (
     (routeName=="HomeScreen")?<View style={styles.container}>
         <Image
