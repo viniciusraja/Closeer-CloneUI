@@ -1,6 +1,6 @@
 import React from 'react';
-// import { Provider } from 'react-redux';
-// import configureStore from './src/store/ducks/store/configureStore';
+import { Provider } from 'react-redux';
+import configureStore from 'store/configureStore';
 
 import { StatusBar, View } from 'react-native';
 
@@ -8,7 +8,7 @@ import { Asset } from 'expo-asset';
 import * as Font from 'expo-font';
 import Router from 'navigation/stackNavigator';
 
-// const store = configureStore();
+const store = configureStore();
 class App extends React.Component {
   state = {
     fontLoaded: false,
@@ -29,10 +29,10 @@ class App extends React.Component {
   render() {
     return this.state.fontLoaded ? (
       <>
-        {/* <Provider store={store}> */}
+        <Provider store={store}>
           <StatusBar hidden />
           <Router />
-        {/* </Provider> */}
+        </Provider>
       </>
     ) : (
       <View />

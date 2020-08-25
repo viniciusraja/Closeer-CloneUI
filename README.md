@@ -36,9 +36,10 @@
 
 <p align="justify">
 Inicialmente foi realizado o redesign de algumas telas do App da Closeer, no figma. Em seguido o projeto foi implementado em React Native, utilizando Redux-thunk, asyncStorage, qrCodeScanner, entre outras tecnologias.
-<a align="justify">
-https://www.figma.com/file/U3M1MGIUig5lLNQNgqU1MZ/Closeer-UI?node-id=0%3A1
-</a>
+
+[UI Desing on Figma](https://www.figma.com/file/U3M1MGIUig5lLNQNgqU1MZ/Closeer-UI?node-id=0%3A1)
+
+</p>
 
 <!-- ## 🏁 Getting Started <a name = "getting_started"></a>
 
