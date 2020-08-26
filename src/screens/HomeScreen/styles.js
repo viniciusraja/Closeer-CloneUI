@@ -4,7 +4,8 @@ export const styles = StyleSheet.create({
     container: {
         flex: 1,
         alignItems: 'center',
-        justifyContent: 'center',
+        justifyContent: 'space-evenly',
+        padding:10,
         backgroundColor:Constants.Colors.closeerBackgroundColor
     },
     logoImage:{

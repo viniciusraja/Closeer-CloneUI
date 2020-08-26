@@ -9,6 +9,7 @@ import AlreadyHaveAccount from 'screens/LoginScreen/AlreadyHaveAccount'
 import Header from 'components/Header'
 import HomeScreen from 'screens/HomeScreen'
 import InitialLoadingScreen from 'screens/InitialLoadingScreen'
+import ScanQrCodeScreen from 'screens/ScanQrCodeScreen';
 const LoginStack = createStackNavigator(
   {
   LoginScreen: {
@@ -26,17 +27,23 @@ const LoginStack = createStackNavigator(
     },
   },
 });
+
 const LogedStack = createStackNavigator(
   {
   HomeScreen: {
     screen: HomeScreen,
     navigationOptions: {
       header:(()=><Header/>),
-      
-    },
+  }
   },
-
+  ScanQrCodeScreen:{
+      screen: ScanQrCodeScreen,
+      navigationOptions: {
+        header:(()=><Header/>),
+      },
+    }
 });
+
   const Router = createSwitchNavigator(
     {
       AuthLoading: InitialLoadingScreen,
