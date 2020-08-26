@@ -4,6 +4,7 @@ import Constants from 'config/constants';
 export const styles = StyleSheet.create({
   container: {
     height: Constants.Layout.headerHeight,
+    width:Constants.Layout.window.width,
     paddingHorizontal: 0.04 * Constants.Layout.window.width,
     flexDirection: 'row',
     backgroundColor: Constants.Colors.closeerLight,
@@ -34,4 +35,9 @@ export const styles = StyleSheet.create({
     height: '100%',
     borderRadius: Constants.Layout.headerHeight,
   },
+  backButton:{
+    justifyContent:'center',
+    alignItems:'center',
+    height:'100%',
+  }
 });
