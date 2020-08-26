@@ -10,6 +10,7 @@ import Header from 'components/Header'
 import HomeScreen from 'screens/HomeScreen'
 import InitialLoadingScreen from 'screens/InitialLoadingScreen'
 import ScanQrCodeScreen from 'screens/ScanQrCodeScreen';
+import Drawer from './drawerNavigator';
 const LoginStack = createStackNavigator(
   {
   LoginScreen: {
@@ -28,31 +29,15 @@ const LoginStack = createStackNavigator(
   },
 });
 
-const LogedStack = createStackNavigator(
-  {
-  HomeScreen: {
-    screen: HomeScreen,
-    navigationOptions: {
-      header:(()=><Header/>),
-  }
-  },
-  ScanQrCodeScreen:{
-      screen: ScanQrCodeScreen,
-      navigationOptions: {
-        header:(()=><Header/>),
-      },
-    }
-});
-
-  const Router = createSwitchNavigator(
+const AppSwitchNavigator = createSwitchNavigator(
     {
       AuthLoading: InitialLoadingScreen,
       Login: LoginStack,
-      Home: LogedStack,
+      Home: Drawer,
     },
     {
       initialRouteName: 'AuthLoading',
     }
   );
   
-export default createAppContainer(Router);
+  export default createAppContainer(AppSwitchNavigator)

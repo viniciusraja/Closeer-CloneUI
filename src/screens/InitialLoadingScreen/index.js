@@ -21,7 +21,7 @@ useEffect(() => {
       try {
         const token=await SecureStore.getItemAsync('userToken')
         if(token=="QpwL5tke4Pnpja7X4"){
-          navigate('HomeScreen')
+          navigate('Home')
           const userId=await SecureStore.getItemAsync('userId')
           dispatch(getUserInfo(userId))
 
