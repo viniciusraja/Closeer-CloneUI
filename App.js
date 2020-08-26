@@ -6,8 +6,7 @@ import { StatusBar, View } from 'react-native';
 
 import { Asset } from 'expo-asset';
 import * as Font from 'expo-font';
-import Router from 'navigation/stackNavigator';
-
+import AppSwitchNavigator from 'navigation/stackNavigator';
 const store = configureStore();
 class App extends React.Component {
   state = {
@@ -31,7 +30,7 @@ class App extends React.Component {
       <>
         <Provider store={store}>
           <StatusBar hidden />
-          <Router />
+          <AppSwitchNavigator />
         </Provider>
       </>
     ) : (
