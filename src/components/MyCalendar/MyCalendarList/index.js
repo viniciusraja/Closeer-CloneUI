@@ -7,16 +7,19 @@ import { styles } from './styles';
 import { Ionicons, AntDesign } from '@expo/vector-icons';
 
 import MyCalendarItem from 'components/MyCalendar/MyCalendarItem'
-export default function MainSquareButton(props) {
-const week=[{}]
-
+import getWeek from 'utils/getWeekFromNow';
+export default function MyCalendarList(props) {
+const week=getWeek()
   return (
+    <View style={styles.myCalendarList}>
+      
     <FlatList
-    contentContainerStyle={styles.productsList}
-    data={productsList}
+    data={week}
     renderItem={({item})=><MyCalendarItem {...item}/>}
-    keyExtractor={item=>`${item.id}`}
+    keyExtractor={item=>`${item.dayNumber}`}
     horizontal={true}
     showsHorizontalScrollIndicator={false}
+    ItemSeparatorComponent={()=><View style={{width:10,height:'100%'}}/>}
     />
-  )}
+    </View>
+  )} 

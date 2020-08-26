@@ -10,12 +10,33 @@ export const styles = StyleSheet.create({
         flexDirection:'row',
         backgroundColor: Constants.Colors.closeerLight,
         alignItems: 'center',
-        justifyContent: 'space-around',
+        justifyContent: 'center',
         elevation:2
     },
     buttonText:{
       fontFamily:Constants.Fonts.primaryFontFamily,
       fontSize:Constants.Fonts.mediumFontSize,
-      width:'50%'
+      width:'60%',
+      textAlign:'center',
+    },
+    icon:{
+      position:'absolute',
+      left:20
+    },
+    countDownContainer:{
+      justifyContent:'center',
+      alignItems:'center',
+    },
+    countDown:{
+      justifyContent:'center',
+      alignItems:'center',
+      height:'100%',
+    },
+    countDownText:{
+      position:"absolute",
+      top:10,
+      fontFamily:Constants.Fonts.primaryFontFamily,
+      fontSize:Constants.Fonts.smallFontSize,
+      textAlign:'center'
     }
 }); 

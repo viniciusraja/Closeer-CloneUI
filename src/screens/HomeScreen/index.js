@@ -17,6 +17,7 @@ import MyCalendarList from 'components/MyCalendar/MyCalendarList'
 export default function HomeScreen() {
 const [userCelNumeber, setUserCelNumeber] = useState('');
 const { navigate } = useNavigation();
+
   return (
     <View style={styles.container}>
       <MyCalendarList/>

@@ -10,12 +10,14 @@ export const styles = StyleSheet.create({
         flexDirection:'row',
         backgroundColor: Constants.Colors.closeerLight,
         alignItems: 'center',
-        justifyContent: 'space-around',
+        justifyContent: 'center',
         elevation:2
     },
     buttonText:{
+      paddingLeft:10,
       fontFamily:Constants.Fonts.primaryFontFamily,
       fontSize:Constants.Fonts.mediumFontSize,
-      width:'50%'
-    }
+      width:'65%',
+      textAlign:'left'
+    },
 }); 

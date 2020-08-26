@@ -17,5 +17,8 @@ export const styles = StyleSheet.create({
       fontFamily:Constants.Fonts.primaryFontFamily,
       fontSize:Constants.Fonts.mediumFontSize,
       width:'50%'
+    },
+    myCalendarList:{
+      height:Constants.Layout.window.height*0.15,
     }
 }); 

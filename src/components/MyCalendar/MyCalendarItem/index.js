@@ -7,8 +7,14 @@ import { styles } from './styles';
 import { Ionicons, AntDesign } from '@expo/vector-icons';
 export default function MainSquareButton(props) {
   return (
-    <TouchableOpacity style={styles.container}>
+    <TouchableOpacity style={[styles.container]}>
          <Ionicons name={props.iconName} size={Constants.Fonts.mainButtonsIconSize} color="black" />
-        <Text style={styles.buttonText}>{props.buttonName}</Text>
+        <Text style={styles.dayNumberText}>{props.dayNumber}</Text>
+        <Text style={styles.dayNameText}>{props.dayName}</Text>
+        <View style={styles.workPeriodContainer}>
+        <Text style={styles.workPeriodText}>M</Text>
+        <Text style={styles.workPeriodText}>T</Text>
+        <Text style={styles.workPeriodText}>N</Text>
+        </View>
     </TouchableOpacity>
   )}
