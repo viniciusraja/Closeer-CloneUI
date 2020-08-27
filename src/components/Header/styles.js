@@ -18,10 +18,12 @@ export const styles = StyleSheet.create({
     height: 0.9 * Constants.Layout.headerHeight,
     width: '45%',
     flexDirection: 'row',
-    justifyContent: 'space-between',
+    justifyContent: 'flex-end',
     alignItems: 'center',
   },
   userInformationText: {
+    textAlign: 'right',
+    marginRight: 10,
     fontSize: Constants.Fonts.largeFontSize,
     fontFamily: Constants.Fonts.primaryFontFamily,
     color: Constants.Colors.closeerPrimaryText,

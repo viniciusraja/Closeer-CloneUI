@@ -19,11 +19,10 @@
 <p align="center"> Redesign do App da Closeer, com funcionalidades básicas.
 </p>
 
-<!-- <div align="center" style="margin-bottom:50px" >
+<div align="center" style="margin-bottom:50px" >
   <a href="" rel="noopener">
- <img width=250px style="margin-right:150px" src="./readme/AppUsability-1.gif" alt="Tela Inicial do App 1"></a>
- <img width=250px src="./readme/AppUsability-2.gif" alt="Tela Inicial do App 2"></a>
-</div> -->
+ <img width=250px src="./readme/AppUsability.gif" alt="Tela Inicial do App 1"></a>
+</div>
 
 ## 📝 Table of Contents
 

@@ -4,7 +4,6 @@ import Constants from 'config/constants';
 import { styles } from './styles';
 import { Ionicons } from '@expo/vector-icons';
 import * as SecureStore from 'expo-secure-store';
-import { DrawerActions } from '@react-navigation/native';
 
 import { useNavigation, useNavigationState } from 'react-navigation-hooks';
 import { useDispatch, useSelector } from 'react-redux';
@@ -29,9 +28,6 @@ export default function Header() {
           style={styles.userImageContainer}
           onPress={() => {
             navigation.openDrawer();
-            // navigation.dispatch(DrawerActions.openDrawer());
-            // await SecureStore.deleteItemAsync('userToken')
-            // await SecureStore.deleteItemAsync('userId')
           }}>
           <Image
             resizeMode="cover"
@@ -45,30 +41,38 @@ export default function Header() {
     <View style={styles.container}>
       <TouchableOpacity
         style={styles.backButton}
-        onPress={() => navigation.goBack()}>
+        onPress={() => navigate('HomeScreen')}>
         <Ionicons
           name="ios-arrow-round-back"
           size={Constants.Fonts.xLargeFontSize}
           color={Constants.Colors.closeerPrimaryText}
         />
       </TouchableOpacity>
-      <View style={styles.userInformationContainer}>
-        <Text style={styles.userInformationText}>
-          Olá, {userInfo.first_name}
-        </Text>
-        <TouchableOpacity
-          style={styles.userImageContainer}
-          onPress={async () => {
-            await SecureStore.deleteItemAsync('userToken');
-            await SecureStore.deleteItemAsync('userId');
-          }}>
-          <Image
-            resizeMode="cover"
-            style={styles.userImage}
-            source={{ uri: userInfo.avatar }}
-          />
-        </TouchableOpacity>
-      </View>
+      {userInfo.avatar ? (
+        <View style={styles.userInformationContainer}>
+          <Text style={styles.userInformationText}>
+            {routeName == 'HomeScreen' && 'Olá,'}
+            {userInfo.first_name}
+          </Text>
+          <TouchableOpacity
+            style={styles.userImageContainer}
+            onPress={async () => {
+              navigation.openDrawer();
+            }}>
+            <Image
+              resizeMode="cover"
+              style={styles.userImage}
+              source={{ uri: userInfo.avatar }}
+            />
+          </TouchableOpacity>
+        </View>
+      ) : (
+        <Image
+          resizeMode="contain"
+          style={styles.logoImage}
+          source={require('assets/images/logo-closeer-black.png')}
+        />
+      )}
     </View>
   );
 }

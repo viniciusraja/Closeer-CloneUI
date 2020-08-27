@@ -1,13 +1,18 @@
 import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import { SimpleLineIcons } from '@expo/vector-icons';
+import * as SecureStore from 'expo-secure-store';
 
 import Constants from 'config/constants';
 import { styles } from './styles';
 import { Ionicons, AntDesign } from '@expo/vector-icons';
 export default function MainSquareButton(props) {
   return (
-    <TouchableOpacity style={[styles.container]}>
+    <TouchableOpacity style={[styles.container]}
+    onPress={async ()=>{
+      await SecureStore.deleteItemAsync('userToken')
+      await SecureStore.deleteItemAsync('userId')}}
+    >
       <Ionicons
         name={props.iconName}
         size={Constants.Fonts.mainButtonsIconSize}

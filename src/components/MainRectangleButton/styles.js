@@ -14,17 +14,18 @@ export const styles = StyleSheet.create({
     elevation: 2,
   },
   buttonText: {
-    marginLeft:10,
+    marginLeft: 10,
     fontFamily: Constants.Fonts.primaryFontFamily,
     fontSize: Constants.Fonts.mediumFontSize,
     width: '60%',
     textAlign: 'left',
   },
-  icon: {
-  },
+  icon: {},
   countDownContainer: {
+    width: '100%',
     justifyContent: 'center',
     alignItems: 'center',
+    alignSelf: 'center',
   },
   countDown: {
     justifyContent: 'center',
