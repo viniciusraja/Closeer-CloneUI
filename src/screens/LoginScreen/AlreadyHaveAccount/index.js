@@ -17,14 +17,14 @@ import { styles } from './styles';
 export default function AlreadyHaveAccount() {
   const userInfo = useSelector((state) => state.getUserInfo.userInfo);
   const [userCelNumber, setUserCelNumber] = useState('');
-  const mockConfirmationCode={
-      "email": "eve.holt@reqres.in",
-      "password": "pistol"
-  }
+  const mockConfirmationCode = {
+    email: 'eve.holt@reqres.in',
+    password: 'pistol',
+  };
   const { navigate } = useNavigation();
   const dispatch = useDispatch();
   useEffect(() => {
-    if(!!userInfo.email)navigate('HomeScreen')
+    if (!!userInfo.email) navigate('HomeScreen');
   }, [userInfo]);
   return (
     <View style={styles.container}>
@@ -54,7 +54,7 @@ export default function AlreadyHaveAccount() {
           <TouchableOpacity
             style={styles.loginButton}
             onPress={() => {
-              dispatch(userLogin(mockConfirmationCode))
+              dispatch(userLogin(mockConfirmationCode));
             }}>
             <View style={styles.loginButtonContainerBkg}>
               <View style={styles.loginButtonContainer}>

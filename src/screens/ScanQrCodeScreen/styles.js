@@ -1,7 +1,5 @@
-import { StyleSheet} from 'react-native';
-import Constants from 'config/constants'
-
-
+import { StyleSheet } from 'react-native';
+import Constants from 'config/constants';
 
 export const styles = StyleSheet.create({
   qrCodeContainer: {
@@ -24,4 +22,3 @@ export const styles = StyleSheet.create({
     fontSize: 17,
   },
 });
-  

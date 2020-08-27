@@ -8,7 +8,12 @@ import { Ionicons, AntDesign } from '@expo/vector-icons';
 export default function MainSquareButton(props) {
   return (
     <TouchableOpacity style={styles.container}>
-         <Ionicons name={props.iconName} size={Constants.Fonts.mainButtonsIconSize} color="black" />
-        <Text style={styles.buttonText}>{props.buttonName}</Text>
+      <Ionicons
+        name={props.iconName}
+        size={Constants.Fonts.mainButtonsIconSize}
+        color="black"
+      />
+      <Text style={styles.buttonText}>{props.buttonName}</Text>
     </TouchableOpacity>
-  )}
+  );
+}

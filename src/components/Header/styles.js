@@ -4,7 +4,7 @@ import Constants from 'config/constants';
 export const styles = StyleSheet.create({
   container: {
     height: Constants.Layout.headerHeight,
-    width:Constants.Layout.window.width,
+    width: Constants.Layout.window.width,
     paddingHorizontal: 0.04 * Constants.Layout.window.width,
     flexDirection: 'row',
     backgroundColor: Constants.Colors.closeerLight,
@@ -16,15 +16,15 @@ export const styles = StyleSheet.create({
   },
   userInformationContainer: {
     height: 0.9 * Constants.Layout.headerHeight,
-    width:'45%',
-    flexDirection:'row',
-    justifyContent:'space-between',
-    alignItems:'center'
+    width: '45%',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
   },
   userInformationText: {
-    fontSize:Constants.Fonts.largeFontSize,
+    fontSize: Constants.Fonts.largeFontSize,
     fontFamily: Constants.Fonts.primaryFontFamily,
-    color:Constants.Colors.closeerPrimaryText
+    color: Constants.Colors.closeerPrimaryText,
   },
   userImageContainer: {
     height: 0.8 * Constants.Layout.headerHeight,
@@ -35,9 +35,9 @@ export const styles = StyleSheet.create({
     height: '100%',
     borderRadius: Constants.Layout.headerHeight,
   },
-  backButton:{
-    justifyContent:'center',
-    alignItems:'center',
-    height:'100%',
-  }
+  backButton: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: '100%',
+  },
 });
