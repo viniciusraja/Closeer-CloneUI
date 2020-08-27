@@ -48,7 +48,7 @@ export default function HomeScreen() {
         }}>
         <MainSquareButton
           iconName="md-information-circle-outline"
-          buttonName="Meu Currículo"
+          buttonName="Avisos"
         />
         <MainSquareButton
           iconName="ios-help-circle-outline"

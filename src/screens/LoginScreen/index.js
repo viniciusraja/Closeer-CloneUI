@@ -19,14 +19,18 @@ export default function LoginScreen() {
         source={require('assets/images/logo-closeer-black.png')}
       />
       <View style={styles.loginButtons}>
-        <TouchableOpacity style={styles.loginButton}>
+        <TouchableOpacity
+          style={styles.loginButton}
+          onPress={() => navigate('CreateAccount')}>
           <View style={styles.loginButtonContainerBkg}>
             <View style={styles.loginButtonContainer}>
               <Text style={styles.loginButtonText}>CRIAR MINHA CONTA</Text>
             </View>
           </View>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.loginButton}>
+        <TouchableOpacity
+          style={styles.loginButton}
+          onPress={() => navigate('HaveInvite')}>
           <View style={styles.loginButtonContainerBkg}>
             <View style={styles.loginButtonContainer}>
               <Text style={styles.loginButtonText}>TENHO UM CONVITE</Text>
