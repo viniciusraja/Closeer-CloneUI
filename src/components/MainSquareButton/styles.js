@@ -6,11 +6,11 @@ export const styles = StyleSheet.create({
     height: Constants.Layout.window.height * 0.15,
     width: (Constants.Layout.window.width - 30) / 2,
     borderRadius: Constants.Layout.window.height * 0.015,
-    paddingHorizontal: 0.02 * Constants.Layout.window.width,
+    paddingHorizontal: 10,
     flexDirection: 'row',
     backgroundColor: Constants.Colors.closeerLight,
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
     elevation: 2,
   },
   buttonText: {
