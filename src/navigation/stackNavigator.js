@@ -11,6 +11,8 @@ import HomeScreen from 'screens/HomeScreen';
 import InitialLoadingScreen from 'screens/InitialLoadingScreen';
 import ScanQrCodeScreen from 'screens/ScanQrCodeScreen';
 import Drawer from './drawerNavigator';
+import CreateAccount from 'screens/LoginScreen/CreateAccount';
+import HaveInvite from 'screens/LoginScreen/HaveInvite';
 const LoginStack = createStackNavigator({
   LoginScreen: {
     screen: LoginScreen,
@@ -20,6 +22,20 @@ const LoginStack = createStackNavigator({
   },
   AlreadyHaveAccount: {
     screen: AlreadyHaveAccount,
+
+    navigationOptions: {
+      header: () => <Header />,
+    },
+  },
+  CreateAccount: {
+    screen: CreateAccount,
+
+    navigationOptions: {
+      header: () => <Header />,
+    },
+  },
+  HaveInvite: {
+    screen: HaveInvite,
 
     navigationOptions: {
       header: () => <Header />,
