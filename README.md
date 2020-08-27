@@ -40,55 +40,20 @@ Inicialmente foi realizado o redesign de algumas telas do App da Closeer, no fig
 
 </p>
 
-<!-- ## 🏁 Getting Started <a name = "getting_started"></a>
+<!-- <!-- ## 🏁 Getting Started <a name = "getting_started"></a> -->
 
 
 ### Executando o APP
 
 Você poderá executar o Closeer Clone por meio do App do Expo, basta escanear o QrCode abaixo com o App Expo, que pode ser encontrado na PlayStore.
 
-Você também poderá executar o app por meio do navegador com o link abaixo:
-https://expo.io/appetize-simulator?url=https://expo.io/@viniciusraja/megahack-ambev-experience
+Para iniciar o app clique no link, espere a fila do appetize e quando a página carregar clique no botão azul, executar projeto com expo.
+Link para executar o app por meio do navegador:
+<br><a>https://expo.io/appetize-simulator?url=https://expo.io/@viniciusraja/closeer-clone-ui</a>
 
 
 O QrCode também pode ser encontrado no link abaixo:
-https://expo.io/@viniciusraja/megahack-ambev-experience
-
-<p align="center">
-  <a href="" rel="noopener">
- <img width=300px src="https://raw.githubusercontent.com/viniciusraja/MegahackAmbev/master/readme/expoQrcode.PNG" alt="QrCode para executar app"></a>
-</p>
-
-
-### Crie sua conta ou entre nesta conta teste
-``` 
-    email: maria@gmail.com
-    password:12345
-```    
-### QrCodes Mockados Para uso no App
-Abra o Scan no seu AmbevExperience após logar na sua conta e escaneie os QrCodes Abaixo
-
-### QrCode para ganhar pontos com reciclagem
-<p align="center" >
-  <a href="" rel="noopener" margin-right=10>
- <img width=300px src="https://raw.githubusercontent.com/viniciusraja/MegahackAmbev/master/readme/QrcodeReciclagem.PNG" alt="Qrcode para uso do usuário">
- </a>
-
-</p>
-<p align="center" >
-  <a href="" rel="noopener">
- <img width=300px src="https://raw.githubusercontent.com/viniciusraja/MegahackAmbev/master/readme/QrcodeReciclagem2.PNG" alt="Qrcode para uso do usuário">
- </a>
-</p>
-
-
-
-### QrCode com anúncio
-<p align="center" >
-  <a href="" rel="noopener" margin-right=10>
- <img width=300px src="https://raw.githubusercontent.com/viniciusraja/MegahackAmbev/master/readme/qrCodeAnuncios.PNG" alt="Qrcode para uso do usuário">
- </a>
- -->
+<br><a>https://expo.io/@viniciusraja/closeer-clone-ui</a>
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
