@@ -14,6 +14,7 @@ import { styles } from './styles';
 import MainSquareButton from 'components/MainSquareButton';
 import MainRectangleButton from 'components/MainRectangleButton';
 import MyCalendarList from 'components/MyCalendar/MyCalendarList';
+import MainRectangleSlideButton from 'components/MainRectangleSlideButton';
 export default function HomeScreen() {
   const [userCelNumeber, setUserCelNumeber] = useState('');
   const { navigate } = useNavigation();
@@ -27,10 +28,7 @@ export default function HomeScreen() {
         }}>
         <MainRectangleButton iconName="qrcode" buttonName="Inicie seu Job" />
       </TouchableOpacity>
-      <MainRectangleButton
-        iconName="wallet"
-        buttonName="Pressione para ver saldo"
-      />
+      <MainRectangleSlideButton />
       <View
         style={{
           width: '100%',

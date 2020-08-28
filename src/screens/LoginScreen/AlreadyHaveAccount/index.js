@@ -38,7 +38,7 @@ export default function AlreadyHaveAccount() {
         <Image
           resizeMode="contain"
           style={styles.logoImage}
-          source={require('assets/images/logo-closeer-black.png')}
+          source={require('assets/images/logo-closeer-black2.png')}
         />
         <View style={styles.inputAndButton}>
           <Text style={styles.insertUserNumberText}>

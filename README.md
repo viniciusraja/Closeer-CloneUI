@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=200  src="./src/assets/images/logo-closeer-black@2x.png" alt="Project logo"></a>
+ <img width=200  src="./src/assets/images/logo-closeer-black2.png" alt="Project logo"></a>
 </p>
 
 <h3 align="center"></h3>

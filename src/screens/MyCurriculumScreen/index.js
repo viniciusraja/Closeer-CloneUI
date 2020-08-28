@@ -6,8 +6,8 @@ import Constants from 'config/constants';
 export default function MyCurriculumScreen() {
   const { routeName } = useNavigationState();
   return (
-    <> 
-      <View     
+    <>
+      <View
         style={{
           flex: 1,
           justifyContent: 'center',

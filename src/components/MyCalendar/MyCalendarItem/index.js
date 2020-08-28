@@ -8,11 +8,12 @@ import { styles } from './styles';
 import { Ionicons, AntDesign } from '@expo/vector-icons';
 export default function MainSquareButton(props) {
   return (
-    <TouchableOpacity style={[styles.container]}
-    onPress={async ()=>{
-      await SecureStore.deleteItemAsync('userToken')
-      await SecureStore.deleteItemAsync('userId')}}
-    >
+    <TouchableOpacity
+      style={[styles.container]}
+      onPress={async () => {
+        await SecureStore.deleteItemAsync('userToken');
+        await SecureStore.deleteItemAsync('userId');
+      }}>
       <Ionicons
         name={props.iconName}
         size={Constants.Fonts.mainButtonsIconSize}

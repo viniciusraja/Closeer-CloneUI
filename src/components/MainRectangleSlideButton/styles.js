@@ -1,0 +1,70 @@
+import { StyleSheet } from 'react-native';
+import Constants from 'config/constants';
+
+export const styles = StyleSheet.create({
+  container: {
+    height: Constants.Layout.window.height * 0.15,
+    width: Constants.Layout.window.width - 20,
+    backgroundColor: Constants.Colors.closeerTerciaryText,
+    borderRadius: Constants.Layout.window.height * 0.015,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  balanceTextTitle: {
+    position: 'absolute',
+    top: 10,
+    width: '100%',
+    height: '100%',
+    textAlign: 'center',
+    textAlignVertical: 'top',
+    fontFamily: Constants.Fonts.primaryFontFamily,
+    fontSize: Constants.Fonts.smallFontSize,
+    color: Constants.Colors.closeerPrimaryText,
+  },
+  balanceTextValue: {
+    position: 'absolute',
+    width: '100%',
+    height: '100%',
+    textAlign: 'center',
+    textAlignVertical: 'center',
+    fontFamily: Constants.Fonts.primaryFontFamily,
+    fontSize: Constants.Fonts.largeFontSize,
+    color: Constants.Colors.closeerPrimaryText,
+  },
+  balaceSliderTileContainer: {
+    width: '100%',
+    height: '100%',
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+    flexDirection: 'row',
+  },
+  balaceSliderContainer: {
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+    flexDirection: 'row',
+    height: Constants.Layout.window.height * 0.15,
+    width: Constants.Layout.window.width - 20,
+    backgroundColor: Constants.Colors.closeerLight,
+    borderRadius: Constants.Layout.window.height * 0.015,
+    elevation: 2,
+  },
+  icon: {
+    marginLeft: 10,
+  },
+  balaceSliderTitle: {
+    marginLeft: 10,
+    textAlign: 'center',
+    justifyContent: 'center',
+    alignItems: 'center',
+    fontFamily: Constants.Fonts.primaryFontFamily,
+    fontSize: Constants.Fonts.mediumFontSize,
+    color: Constants.Colors.closeerPrimaryText,
+  },
+  iconOpened: {
+    height: 50,
+    width: 50,
+    position: 'absolute',
+    textAlignVertical: 'center',
+    textAlign: 'center',
+  },
+});

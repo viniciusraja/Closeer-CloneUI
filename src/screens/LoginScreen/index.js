@@ -16,7 +16,7 @@ export default function LoginScreen() {
       <Image
         resizeMode="contain"
         style={styles.logoImage}
-        source={require('assets/images/logo-closeer-black.png')}
+        source={require('assets/images/logo-closeer-black2.png')}
       />
       <View style={styles.loginButtons}>
         <TouchableOpacity

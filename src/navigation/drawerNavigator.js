@@ -138,9 +138,7 @@ const Drawer = createDrawerNavigator(
           <SimpleLineIcons
             name="home"
             size={24}
-            color={
-              Constants.Colors.closeerLight
-            }
+            color={Constants.Colors.closeerLight}
           />
         ),
       },
@@ -153,9 +151,7 @@ const Drawer = createDrawerNavigator(
           <Ionicons
             name="ios-calendar"
             size={24}
-            color={
-              Constants.Colors.closeerLight
-            }
+            color={Constants.Colors.closeerLight}
           />
         ),
       },
@@ -168,9 +164,7 @@ const Drawer = createDrawerNavigator(
           <Ionicons
             name="md-paper"
             size={24}
-            color={
-              Constants.Colors.closeerLight
-            }
+            color={Constants.Colors.closeerLight}
           />
         ),
       },
@@ -183,9 +177,7 @@ const Drawer = createDrawerNavigator(
           <AntDesign
             name="wallet"
             size={24}
-            color={
-              Constants.Colors.closeerLight
-            }
+            color={Constants.Colors.closeerLight}
           />
         ),
       },
@@ -198,9 +190,7 @@ const Drawer = createDrawerNavigator(
           <Ionicons
             name="md-information-circle-outline"
             size={24}
-            color={
-              Constants.Colors.closeerLight
-            }
+            color={Constants.Colors.closeerLight}
           />
         ),
       },
@@ -213,9 +203,7 @@ const Drawer = createDrawerNavigator(
           <SimpleLineIcons
             name="settings"
             size={24}
-            color={
-              Constants.Colors.closeerLight
-            }
+            color={Constants.Colors.closeerLight}
           />
         ),
       },
@@ -228,9 +216,7 @@ const Drawer = createDrawerNavigator(
           <Ionicons
             name="ios-help-circle-outline"
             size={24}
-            color={
-              Constants.Colors.closeerLight
-            }
+            color={Constants.Colors.closeerLight}
           />
         ),
       },
@@ -244,9 +230,9 @@ const Drawer = createDrawerNavigator(
       labelStyle: {
         fontWeight: 'normal',
       },
-      activeTintColor:Constants.Colors.closeerLight,
+      activeTintColor: Constants.Colors.closeerLight,
       inactiveTintColor: Constants.Colors.closeerLight,
-      activeBackgroundColor: "#121212"
+      activeBackgroundColor: '#121212',
     },
   }
 );
