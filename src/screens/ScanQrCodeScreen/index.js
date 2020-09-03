@@ -48,10 +48,6 @@ export default function ScanQrCodeScreen() {
 
     Alert.alert(`Seu Job foi iniciado!`);
   };
-  setTimeout(function () {
-    dispatch(setQrCode(20));
-    navigate('HomeScreen');
-  }, 2000);
 
   if (hasPermission === null) {
     return <Text>Pedindo Permissão da câmera</Text>;
