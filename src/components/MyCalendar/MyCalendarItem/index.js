@@ -6,7 +6,7 @@ import * as SecureStore from 'expo-secure-store';
 import Constants from 'config/constants';
 import { styles } from './styles';
 import { Ionicons, AntDesign } from '@expo/vector-icons';
-export default function MainSquareButton(props) {
+export default function MyCalendarItem(props) {
   return (
     <TouchableOpacity
       style={[styles.container]}
